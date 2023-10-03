@@ -1,0 +1,73 @@
+@import url('theme.css');
+
+header {
+    background-color: var(--main-color);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header content */
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.hc-left {
+    width: 100%;
+    max-width: 500px;
+}
+
+.hcl-wrap {
+    /* border: solid black; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hcl-wrap img {
+    height: 100%;
+    max-width: 100%;
+    aspect-ratio: 3/4;
+}
+
+.hc-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    max-width: 600px;
+}
+
+.hcr-wrap h1 {
+    margin-bottom: 2rem;
+}
+
+@media (max-width:500px) {
+    header {
+        padding: 0;
+    }
+    .header-content {
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+    .hcl-wrap img{
+        height: 450px;
+        aspect-ratio: 2/3;
+    }
+    .hc-left{
+        max-width: 100%;
+    }
+    .hc-right{
+        max-width: 100%;
+        text-align: center;
+    }
+}

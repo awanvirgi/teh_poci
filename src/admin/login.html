@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../assets/css/login.css">
+    <script src="https://kit.fontawesome.com/c5b31b49c9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="nav-left">
+                <div class="n-img-wrap">
+                    <img src="../../assets/img/logo-poci.png" alt="logo">
+                </div>
+            </div>
+            <div class="nav-right" id="nav-link">
+            </div>
+        </nav>
+        <div class="loginpage">
+            <form action="proses/login-action.php" method="post">
+                <div class="form-box" style="color: black!important;">
+                    <h3 style="color: black!important;">Login</h3>
+                    <div class="input-area">
+                        <label for="username" style="color: black!important;">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Masukan email"
+                            class="form-control">
+                    </div>
+                    <div class="input-area">
+                        <label for="password" style="color: black!important;">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Masukan Password"
+                            class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

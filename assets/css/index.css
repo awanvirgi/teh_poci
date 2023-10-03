@@ -1,0 +1,52 @@
+@import url('theme.css');
+@import url('nav.css');
+@import url('index-h.css');
+@import url('index-m.css');
+@import url('index-f.css');
+
+
+header,
+main,
+footer {
+    height: 100vh !important;
+}
+
+.main-wrap {
+    background-image: url('../img/bg/bg-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content2 {
+    background-image: url('../img/bg/bg-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-wrap {
+    background-image: url('../img/bg/bg-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact {
+    background-color: var(--third-color);
+    padding: 3rem;
+    justify-content: space-between;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: 1;
+}
+
+.get-help h5,
+.address h5,
+.social h5 {
+    text-decoration: underline;
+}
+
+.social {
+    font-size: xx-large;
+}

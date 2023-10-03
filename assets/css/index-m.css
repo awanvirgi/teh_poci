@@ -1,0 +1,199 @@
+@import url('theme.css');
+
+.main-wrap {
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    /* border: solid red; */
+}
+
+.main-list {
+    display: flex;
+    height: 7rem;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    /* border: solid red */
+}
+
+.box-list {
+    border: solid white;
+    height: 90px;
+    width: 90px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+label img {
+    object-fit: fill;
+}
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999999999px;
+}
+
+input[type="radio"]:checked+label {
+    background-color: var(--font-color1);
+    height: 100px;
+    width: 100px;
+    transition: .3s all;
+}
+
+input[type="radio"]:checked+label>img {
+    transform: scale(1.5);
+}
+
+input[type="radio"]+label {
+    padding: 1rem;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mc-left {
+    width: 30%;
+    text-align: left;
+}
+
+.mc-right {
+    width: 30%;
+    text-align: right;
+}
+
+
+.main-header {
+    display: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* kontent 2 */
+
+
+.main-content2 {
+    padding: 4rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 1rem; */
+    height: 100%;
+    /* border: solid red; */
+}
+
+.mc2-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.sub-box {
+    height: 430px;
+    width: 320px;
+    /* text-align: center; */
+    border-radius: 10px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sub-box:hover {
+    transform: scale(1.1);
+    transition: transform ease-in-out .1s;
+}
+
+.sub-box h3 {
+    text-align: center;
+}
+
+.box1 {
+    background-color: var(--add-color2);
+}
+
+.box2 {
+    background-color: var(--third-color);
+}
+
+.box3 {
+    background-color: var(--add-color1);
+}
+
+
+@media (max-width: 1080px) {
+
+    .mc-left,
+    .mc-right {
+        display: none;
+    }
+
+    .main-header {
+        display: flex;
+    }
+
+    .main-content {
+        justify-content: center;
+    }
+
+    .sub-box {
+        font-size: small;
+    }
+
+    .mcc-wrap img {
+        max-height: 500px;
+    }
+
+    .mc2-content {
+        display: flex;
+        overflow: scroll;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .mc2-content::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .sub-box {
+        display: inline-block;
+        /* padding: 2rem; */
+        max-width: 100%;
+        border-radius: 0%;
+        max-height: 100%;
+    }
+
+    .sub-box:hover {
+        transform: none;
+    }
+
+    .main-list {
+        gap: 0;
+    }
+
+    .box-list {
+        /* height: 50px;
+        width: 50px; */
+        /* border: solid red; */
+        transform: scale(0.8);
+    }
+}

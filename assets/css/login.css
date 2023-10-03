@@ -1,0 +1,35 @@
+@import url('theme.css');
+@import url('nav.css');
+
+.wrapper{
+    background-color: var(--main-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    width: 320px;
+    aspect-ratio: 4/5;
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: var(--font-color1);
+    color: black;
+    border-radius: 10px;
+    justify-content: center;
+}
+nav{
+    position: absolute;
+    height: 80px;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}

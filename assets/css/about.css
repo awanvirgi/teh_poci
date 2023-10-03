@@ -1,0 +1,43 @@
+@import url('theme.css');
+@import url('nav.css');
+main {
+    height: 100vh;
+    background-image: url('../img/bg/bg-about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mcr-wrap img{
+    height: 600px;
+}
+@media (max-width: 1080px){
+    .main-content{
+        flex-direction:column-reverse;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .mcr-wrap img{
+        height: 300px;
+    }
+    
+}
+@media (max-width: 500px){
+    .main-content{
+        flex-direction:column-reverse;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .mcr-wrap img{
+        height: 150px;
+    }
+}

@@ -1,0 +1,120 @@
+@import url(theme.css);
+*{
+    color: unset;
+}
+.wrapper{
+    width: 100%;
+}
+.sidebars{
+    background-color: var(--main-color);
+    color: var(--font-color1);
+}
+.s-judul{
+    display: flex;
+    justify-content: center;
+}
+.s-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.s-list{
+    display: flex;
+    flex-direction: column;
+}
+.profile{
+    flex-direction: column;
+}
+.nav-item{
+    padding:1rem ;
+    border-radius: 10px;
+    font-size: large;
+    display: flex;
+}
+.nav-item:hover{
+    background-color:var(--add-color2);
+}
+.nav-item a i{
+    margin-right: 10px;
+}
+.s-active{
+    background-color: var(--second-color);
+}
+
+/* bagian navbar */
+/* bagian main */
+
+main{
+    color: var(--font-color2);
+}
+.table-area{
+    border-radius: 5px;
+    background-color: var(--third);
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+tr td{
+    vertical-align: middle;
+    text-align: center;
+    background-color: var(--second-color)!important;
+    color: var(--font-color1)!important;
+}
+
+table thead th{
+    color: var(--font-color1)!important;
+    background-color:var(--main-color)!important;
+    border-bottom: black solid 3px!important;
+}
+.active{
+    color: var(--font-color1);
+}
+.delete{
+    background-color:var(--add-color1)!important ;
+    box-shadow: inset 0 0 0 0 var(--add-color1)!important;
+}
+.add{
+    background-color:var(--main-color)!important ;
+    box-shadow: inset 0 0 0 0 var(--main-color)!important;
+    color: var(--font-color1)!important;
+}
+
+
+/* bagian main */
+/* bagian input */
+.input-area{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+}
+.ia-box{
+    border-radius: 10px;
+    border:solid 1px grey ;
+    padding: 10px;
+    width: 32rem;
+    background-color: var(--font-color1);
+
+}
+.iab-input{
+    padding: 3rem;
+    padding-top: 2rem;
+}
+.iab-close{
+    display: flex;
+    justify-content: flex-end;
+}
+.close{
+    background-color: transparent!important;
+    box-shadow: none!important;
+    color:black;
+}
+.iab-field{
+    margin-bottom: 1rem;
+}
+
+#input-area-add{
+    display: none;
+}
